@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Лабораторная работа №2</string>
+    <string name="sensors">Датчики</string>
+    <string name="infoPhone">Информация об устройстве</string>
+    <string name="info">Информация о проекте</string>
+    <string name="getSensors">Получить датчики</string>
+    <string name="about">Работу выполнили студенты 405 группы СПбГТИ(ТУ) Шахов Михаил и Емельянова Ксения</string>
+    <string name="index">индекс типа: </string>
+    <string name="manufacture">производитель: </string>
+    <string name="ver">версия: </string>
+    <string name="power">мощность: </string>
+    <string name="delay">задержка: [</string>
+    <string name="max">макс.значение: </string>
+    <string name="eps">точность: </string>
+    <string name="m"> мВт</string>
+    <string name="mk">] мкс</string>
+    <string name="minAbsAcc">Минимальное абсолютное ускорение, м/с²:</string>
+    <string name="maxAbsAcc">Максимальное абсолютное ускорение, м/с²:</string>
+    <string name="absAcc">Абсолютное ускорение, м/с²:</string>
+    <string name="ok">OK</string>
+    <string name="ClParanth">)</string>
+    <string name="comma">,</string>
+</resources>

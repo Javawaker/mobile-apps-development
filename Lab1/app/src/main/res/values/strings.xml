@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Лабораторная работа №1</string>
+    <string name="dialog_title">Ошибка</string>
+    <string name="dialog_message">Неверный формат данных</string>
+    <string name="water">Вода</string>
+    <string name="ethyl">Этиловый спирт</string>
+    <string name="oil">Нефть</string>
+    <string name="glycerol">Глицерин</string>
+    <string name="heatCapacity">Теплоемкость</string>
+    <string name="boilingTemperature">Температура кипения</string>
+    <string name="density">Плотность</string>
+    <string name="heatingTime">Время нагрева</string>
+    <string name="result">Результат</string>
+    <string name="benzene">Бензол</string>
+    <string name="Error_Title">Ошибка</string>
+    <string name="Error_Empty">Введите значения</string>
+    <string name="Error_Empty_Volume">Введите значение объема</string>
+    <string name="Error_Empty_Wattage">Введите значение мощности нагревательного элемента</string>
+    <string name="Label_Volume">Объем жидкости, л</string>
+    <string name="Label_HeaterWattage">Мощность\nнагревательного элемента, Вт</string>
+    <string name="Label_ComputeTimeToHeat">Расчет времени нагрева жидкости</string>
+    <string name="Label_ChooseLiquid">Выберите жидкость</string>
+    <string name="Button_Calculate">Рассчитать</string>
+    <string name="TextInput_Volume">Л</string>
+    <string name="TextInput_PowerWattage">Вт</string>
+    <string name="Unit_J_K_KG">Дж/(К*кг)</string>
+    <string name="Unit_0C">°C</string>
+    <string name="Unit_S">с</string>
+</resources>

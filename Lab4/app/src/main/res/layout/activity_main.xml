@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-116dp">
+
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="335dp"
+            android:layout_height="82dp"
+            android:text="@string/Label_ComputeTimeToHeat"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLqdTtl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewLqdTtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/Label_ChooseLiquid"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerLqdLst"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHeader" />
+
+        <Spinner
+            android:id="@+id/spinnerLqdLst"
+            android:layout_width="225dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:entries="@android:array/emailAddressTypes"
+            android:textColor="@color/creamy"
+            app:layout_constraintBottom_toTopOf="@+id/textViewVTtl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLqdTtl" />
+
+        <TextView
+            android:id="@+id/textViewVTtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/Label_Volume"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/vTextInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerLqdLst" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vTextInput"
+            android:layout_width="300dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="9dp"
+            android:hint="@string/TextInput_Volume"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintBottom_toTopOf="@+id/textViewPWTtl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVTtl" />
+
+        <TextView
+            android:id="@+id/textViewPWTtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Label_HeaterWattage"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/pWTextInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vTextInput" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pWTextInput"
+            android:layout_width="300dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            android:hint="@string/TextInput_PowerWattage"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColorHint="#616161"
+            app:layout_constraintBottom_toTopOf="@+id/calcBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPWTtl" />
+
+        <Button
+            android:id="@+id/calcBtn"
+            android:layout_width="208dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/Button_Calculate"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewRsltTtl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pWTextInput" />
+
+        <TextView
+            android:id="@+id/textViewRsltTtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Result"
+            android:textAlignment="textStart"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewRslt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calcBtn" />
+
+        <TextView
+            android:id="@+id/textViewRslt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRsltTtl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

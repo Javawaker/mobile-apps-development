@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Лабораторная работа №5</string>
+    <string name="API">https://worldlab.technolog.edu.ru/stud/group10/Lab5/index.html</string>
+    <string name="authors">Работу выполнили студенты 405 группы СПбГТИ(ТУ) Шахов Михаил и Емельянова Ксения</string>
+    <string name="Button1">Информация</string>
+    <string name="info">Информация о проекте</string>
+    <string name="ok">OK</string>
+</resources>
